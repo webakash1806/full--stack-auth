@@ -4,6 +4,7 @@ const emailValidator = require("email-validator")
 
 module.exports.register = async (req, res) => {
     const { name, email, password, confirmPassword } = req.body
+    // console.log(req.body)
     const emailValidate = emailValidator.validate(email)
 
     if (!emailValidate) {
