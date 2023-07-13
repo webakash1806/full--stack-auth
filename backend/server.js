@@ -4,7 +4,7 @@ const dbConfig = require("./config/db.config")
 const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser")
 const userRoute = require("./routes/user.routes")
-const path = require("path");
+// const path = require("path");
 const cors = require("cors")
 const PORT = process.env.PORT || 5000
 
@@ -25,8 +25,8 @@ app.use(cors({
 app.use("/", userRoute)
 
 
-const publicPath = path.resolve(__dirname, "public");
-app.use(express.static(publicPath));
+// const publicPath = path.resolve(__dirname, "public");
+// app.use(express.static(publicPath));
 
 
 dbConfig()

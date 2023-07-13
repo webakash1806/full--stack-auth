@@ -29,7 +29,7 @@ userSchema.methods = {
         return JWT.sign(
             { id: this.id, email: this.email },
             process.env.SECRET,
-            { expiresIn: '2hr' }
+            { expiresIn: '7d' }
         )
     }
 }
