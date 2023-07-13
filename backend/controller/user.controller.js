@@ -3,10 +3,15 @@ const bcrypt = require("bcrypt")
 const emailValidator = require("email-validator")
 
 module.exports.register = async (req, res) => {
-    const { name, email, password, confirmPassword } = req.body
+    const { userName, name, email, bio, password, confirmPassword } = req.body
     // console.log(req.body)
-    const emailValidate = emailValidator.validate(email)
 
+    const uniqueUser = await User.findOne({ userName })
+    if (uniqueUser) {
+        return res.status(404).json({ message: "User name is already taken" })
+    }
+
+    const emailValidate = emailValidator.validate(email)
     if (!emailValidate) {
         return res.status(404).json({ message: "Please input Valid email" })
     }
@@ -19,7 +24,7 @@ module.exports.register = async (req, res) => {
     try {
         const hashPassword = await bcrypt.hash(password, 8)
         const conhashPassword = await bcrypt.hash(confirmPassword, 8)
-        const user = new User({ name, email, password: hashPassword, confirmPassword: conhashPassword })
+        const user = new User({ userName, name, email, bio, password: hashPassword, confirmPassword: conhashPassword })
         if (password === confirmPassword) {
             const userData = await user.save()
             res.status(200).json({ status: "Registered Successfully", Data: userData })
