@@ -13,7 +13,9 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ email, password })
+
+            body: JSON.stringify({ email, password }),
+            credentials: "include"
         })
 
         const data = await response.json()
@@ -32,7 +34,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
 
         if (response.ok || data.message === "User is already loged in. Please logout") {
 
-            setTimeout(dataLoad, 1300);
+            setTimeout(dataLoad, 3000);
 
             function dataLoad() {
                 window.location.href = "http://localhost:5001/user.html"

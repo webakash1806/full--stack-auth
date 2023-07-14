@@ -1,7 +1,7 @@
 const JWT = require("jsonwebtoken")
 
 module.exports = getUserMiddleware = async (req, res, next) => {
-    const token = (req.cookies && req.cookies.token) || null
+    const token = (req.cookies && req.cookies.token)
     console.log(token)
     if (!token) {
         return res.status(404).json({ message: "Login Again" })

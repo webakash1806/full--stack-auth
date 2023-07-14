@@ -52,6 +52,7 @@ module.exports.login = async (req, res) => {
             return res.status(404).json({ message: "Incorrect Password" })
         }
         else {
+            // const newToken = await uniqueEmail.generateAuthToken()
             const token = await uniqueEmail.jwtToken()
             const cookieOption = {
                 expiresIn: 24 * 60 * 60 * 1000,

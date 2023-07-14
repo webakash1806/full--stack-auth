@@ -13,7 +13,7 @@ const userData = async () => {
         console.log(data)
         // console.log(data.Detail.name)
         if (data.message === "Login Again") {
-            window.location.href = "http://localhost:5001/login"
+            window.location.href = "http://localhost:5001/login.html"
         }
 
         if (response.ok) {
