@@ -73,7 +73,6 @@ module.exports.login = async (req, res) => {
 
 module.exports.getUser = async (req, res) => {
     const uniqueId = req.userDetail.id
-
     try {
         const userData = await User.findById(uniqueId)
         res.status(200).json({ status: true, Detail: userData })
