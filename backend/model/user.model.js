@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema({
 userSchema.methods = {
     jwtToken() {
         return JWT.sign(
-            { id: this.id, email: this.email },
+            { id: this._id, email: this.email },
             process.env.SECRET,
             { expiresIn: '7d' }
         )

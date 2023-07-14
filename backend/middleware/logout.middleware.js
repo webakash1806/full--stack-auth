@@ -8,8 +8,8 @@ module.exports = getUserMiddleware = async (req, res, next) => {
     }
 
 
-    const tokenVerify = await JWT.verify(token, process.env.SECRET)
-    req.userDetail = { id: tokenVerify.id, email: tokenVerify.email }
+    // const tokenVerify = await JWT.verify(token, process.env.SECRET)
+    // req.userDetail = { id: tokenVerify.id, email: tokenVerify.email }
     next()
 
 

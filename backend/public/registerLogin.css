@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3fbf594;
+}
+
+.register-container,
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #808080;
+    padding: 15px 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 20rem;
+    padding: 7px 7px 3px 7px;
+    border: 1px solid #7b7979;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    text-transform: capitalize;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+input:not(:placeholder-shown) {
+    background-color: #f0f5fde5;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+    top: -15px;
+    left: 3px;
+    border-radius: 5px;
+    padding: 0 3px;
+    font-size: 15.5px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+button {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A73E8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-link p {
+    font-size: 15px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #0b6cea;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+}
+
+.success-result {
+    width: 13.8rem;
+    position: absolute;
+    top: 0;
+}
+
+.success-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #808080;
+    position: absolute;
+    top: 30px;
+    animation: popUp 0.5s;
+}
+
+@keyframes popUp {
+    0% {
+        top: -20px;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.success-btn i {
+    color: green;
+}

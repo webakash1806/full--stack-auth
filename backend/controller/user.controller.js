@@ -52,11 +52,13 @@ module.exports.login = async (req, res) => {
             return res.status(404).json({ message: "Incorrect Password" })
         }
         else {
-            const token = uniqueEmail.jwtToken()
+            const token = await uniqueEmail.jwtToken()
             const cookieOption = {
-                expiresIn: 2 * 60 * 60 * 1000,
+                expiresIn: 24 * 60 * 60 * 1000,
                 httpOnly: true
             }
+
+            console.log(cookieOption)
 
             res.cookie("token", token, cookieOption)
 

@@ -24,12 +24,24 @@ document.getElementById("registerForm").addEventListener("submit", async (event)
         if (response.ok) {
             const successBtn = document.createElement("div")
             successBtn.classList.add("success-btn")
-            successBtn.innerHTML = "Successfull"
+            successBtn.innerHTML = `<i class="fa-solid fa-circle-check"></i> Registered Successfully`
+
             document.getElementById("successShow").appendChild(successBtn)
-            alert("registerd")
+
+            setTimeout(dataLoad, 1300);
+
+            function dataLoad() {
+                window.location.href = "http://localhost:5001/login.html"
+            }
         }
     }
     catch (e) {
         console.log(e)
     }
 })
+
+// const successBtn = document.createElement("div")
+// successBtn.classList.add("success-btn")
+// successBtn.innerHTML = `<i class="fa-solid fa-circle-check"></i> Registered Successfully`
+
+// document.getElementById("successShow").appendChild(successBtn)

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./registerLogin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="register-container">
+        <h1>Register</h1>
+        <form action="/register" id="registerForm">
+            <div class="form-detail">
+                <input type="text" name="userName" id="userName" placeholder=" ">
+                <label for="">userName</label>
+            </div>
+            <div class="form-detail">
+                <input type="text" name="name" id="name" placeholder=" ">
+                <label for="">Name</label>
+            </div>
+            <div class="form-detail">
+                <input type="email" name="email" id="email" placeholder=" ">
+                <label for="">email</label>
+            </div>
+            <div class="form-detail">
+                <input type="text" name="bio" id="bio" placeholder=" ">
+                <label for="">Bio</label>
+            </div>
+            <div class="form-detail">
+                <input type="password" name="password" id="password" placeholder=" ">
+                <label for="">Password</label>
+            </div>
+            <div class="form-detail">
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder=" ">
+                <label for="">Confirm Password</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account?</p> <a href="./login.html" class="login">Login</a>
+        </div>
+    </div>
+
+    <div id="successShow" class="success-result"></div>
+
+
+    <script src="./register.js"></script>
+</body>
+
+</html>
