@@ -19,7 +19,8 @@
     "email-validator": "^2.0.4",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.3.2"
+    "mongoose": "^7.3.4",
+    "node": "^20.4.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
