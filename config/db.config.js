@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const db_url = process.env.DATABASE || "mongodb://127.0.0.1/jwt-auth-practice"
+const db_url = "mongodb://127.0.0.1/jwt-auth-practice" || process.env.DATABASE
 
 
 const dbConnection = () => {
