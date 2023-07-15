@@ -4,6 +4,8 @@
 
 This project focuses on implementing a full stack authentication system that includes user registration, login, and a profile card to display user data. Express is used as the backend framework, JWT is utilized for generating secure cookies, mongoose is employed for database operations, and bcrypt ensures password safety. The project follows a well-defined file structure and includes essential components such as dbconfig, models, controller, routes, server.js, .env, .gitignore. The frontend is developed using HTML, CSS, and JavaScript, with the public folder containing the finished register, login, and user card interfaces.
 
+## Live Demo -->> https://jwtauthbackend.onrender.com/
+
 ## Routes
 
 1. `/register`: Allows users to register by providing necessary details.
