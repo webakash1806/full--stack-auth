@@ -27,27 +27,29 @@ This project focuses on implementing a full stack authentication system that inc
 ## File Structure
 
 📂 root
-├── 📂 dbconfig    //Contains database configuration settings.
-│   └── db.js
-├── 📂 models
-│   └── User.js
-├── 📂 controllers
-│   ├── authController.js
-│   └── userController.js
+├── 📂 config   
+│   └── db.config.js
+├── 📂 model
+│   └── user.model.js
+├── 📂 controller
+│   └── user.controller.js
 ├── 📂 routes
-│   ├── authRoutes.js
-│   └── userRoutes.js
+│   └── user.routes.js
 ├── 📜 server.js
 ├── .env
 ├── .gitignore
 └── 📂 public
-    ├── 📂 css
-    │   └── style.css
-    ├── 📂 js
-    │   └── script.js
-    └── 📂 images
-        └── ...
-
+    ├── 📂 assets
+    │   └── img
+    └── index.html
+    └── login.html
+    └── user.html
+    └── registerLogin.css
+    └── user.css
+    └── register.js
+    └── login.js
+    └── user.js
+    
 
 - `dbconfig`: Contains database configuration settings.
 - `models`: Includes database models for user data.
@@ -79,12 +81,8 @@ This project focuses on implementing a full stack authentication system that inc
 
 Contributions are welcome! If you find any issues or want to enhance the project, please submit a pull request or open an issue in the GitHub repository.
 
-## License
-
-The project is licensed under the [MIT License](link-to-license-file). Feel free to use, modify, and distribute the code as per the terms of the license.
-
 ## Contact
 
-If you have any questions or need assistance with the project, please feel free to contact [project maintainer] via [contact information].
+If you have any questions or need assistance with the project, please feel free to contact via mail -->> itsakash18.06@gmail.com || WhatsApp -->> +91 6207234759].
 
 Enjoy working on this project! 🚀😊
