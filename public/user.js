@@ -1,11 +1,11 @@
-const endpointUrl = "http://localhost:5001/user"
+const endpointUrl = "https://jwtauthbackend.onrender.com/user"
 
 
 const userData = async () => {
 
 
     try {
-        const response = await fetch("http://localhost:5001/user", {
+        const response = await fetch("https://jwtauthbackend.onrender.com/user", {
             method: "GET",
             credentials: "include"
         });
@@ -13,7 +13,7 @@ const userData = async () => {
         console.log(data)
         // console.log(data.Detail.name)
         if (data.message === "Login Again") {
-            window.location.href = "http://localhost:5001/login.html"
+            window.location.href = "https://jwtauthbackend.onrender.com/login.html"
         }
 
         if (response.ok) {
@@ -32,9 +32,9 @@ userData()
 
 document.getElementById("logout").addEventListener("click", async () => {
     try {
-        const res = await fetch("http://localhost:5001/logout")
+        const res = await fetch("https://jwtauthbackend.onrender.com/logout")
         if (res.ok) {
-            window.location.href = "http://localhost:5001"
+            window.location.href = "https://jwtauthbackend.onrender.com"
         }
     }
     catch (e) {

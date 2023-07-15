@@ -1,4 +1,4 @@
-const endpointUrl = "http://localhost:5001/login"
+const endpointUrl = "https://jwtauthbackend.onrender.com/login"
 
 
 document.getElementById("loginForm").addEventListener("submit", async (event) => {
@@ -37,7 +37,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
             setTimeout(dataLoad, 3000);
 
             function dataLoad() {
-                window.location.href = "http://localhost:5001/user.html"
+                window.location.href = "https://jwtauthbackend.onrender.com/user.html"
             }
         }
     }

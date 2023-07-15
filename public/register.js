@@ -1,5 +1,5 @@
 
-const endpointUrl = "http://localhost:5001/register"
+const endpointUrl = "https://jwtauthbackend.onrender.com/register"
 
 document.getElementById("registerForm").addEventListener("submit", async (event) => {
     event.preventDefault()
@@ -31,7 +31,7 @@ document.getElementById("registerForm").addEventListener("submit", async (event)
             setTimeout(dataLoad, 1300);
 
             function dataLoad() {
-                window.location.href = "http://localhost:5001/login.html"
+                window.location.href = "https://jwtauthbackend.onrender.com/login.html"
             }
         }
     }
@@ -40,8 +40,3 @@ document.getElementById("registerForm").addEventListener("submit", async (event)
     }
 })
 
-// const successBtn = document.createElement("div")
-// successBtn.classList.add("success-btn")
-// successBtn.innerHTML = `<i class="fa-solid fa-circle-check"></i> Registered Successfully`
-
-// document.getElementById("successShow").appendChild(successBtn)
