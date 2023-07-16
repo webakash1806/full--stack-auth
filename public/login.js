@@ -34,7 +34,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
 
         if (response.ok || data.message === "User is already loged in. Please logout") {
 
-            setTimeout(dataLoad, 3000);
+            setTimeout(dataLoad, 1300);
 
             function dataLoad() {
                 window.location.href = "https://jwtauthbackend.onrender.com/user.html"

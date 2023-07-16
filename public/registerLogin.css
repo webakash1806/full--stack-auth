@@ -8,6 +8,7 @@
 body {
     display: flex;
     align-items: center;
+    overflow-x: hidden;
     justify-content: center;
     width: 100vw;
     height: 100vh;
@@ -23,7 +24,7 @@ body {
     /* border: 2px solid black; */
     border-radius: 10px;
     box-shadow: 3px 3px 10px #808080;
-    padding: 15px 30px;
+    padding: 15px;
 }
 
 form {
@@ -39,7 +40,7 @@ form {
 }
 
 input {
-    width: 20rem;
+    width: 18.5rem;
     padding: 7px 7px 3px 7px;
     border: 1px solid #7b7979;
     border-radius: 5px;

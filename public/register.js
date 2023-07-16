@@ -21,6 +21,11 @@ document.getElementById("registerForm").addEventListener("submit", async (event)
         })
         const data = await response.json()
         console.log(data)
+
+        if (response.status === 404 || response.status === 500) {
+            document.getElementById("error").innerHTML = `** ${data.message}`
+        }
+
         if (response.ok) {
             const successBtn = document.createElement("div")
             successBtn.classList.add("success-btn")
