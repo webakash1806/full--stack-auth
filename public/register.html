@@ -18,29 +18,44 @@
 
 <body>
 
-
-    <div class="login-container">
-        <h1>login Form</h1>
-        <form action="" id="loginForm">
+    <div class="register-container">
+        <h1>Register</h1>
+        <form action="" id="registerForm">
+            <div class="form-detail">
+                <input type="text" name="userName" id="userName" placeholder=" ">
+                <label for="">userName</label>
+            </div>
+            <div class="form-detail">
+                <input type="text" name="name" id="name" placeholder=" ">
+                <label for="">Name</label>
+            </div>
             <div class="form-detail">
                 <input type="email" name="email" id="email" placeholder=" ">
-                <label for="">Email</label>
+                <label for="">email</label>
+            </div>
+            <div class="form-detail">
+                <input type="text" name="bio" id="bio" placeholder=" ">
+                <label for="">Bio</label>
             </div>
             <div class="form-detail">
                 <input type="password" name="password" id="password" placeholder=" ">
                 <label for="">Password</label>
             </div>
-            <p class="error" id="error"></p>
-            <button type="submit"> login </button>
+            <div class="form-detail">
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder=" ">
+                <label for="">Confirm Password</label>
+            </div>
+            <button type="submit">Register</button>
         </form>
         <div class="login-link">
-            <p>Don't have an account?</p> <a href="./register.html" class="login">Register</a>
+            <p>Already have an account?</p> <a href="./login.html" class="login">Login</a>
         </div>
     </div>
+
     <div id="successShow" class="success-result"></div>
 
 
-    <script src="./login.js"></script>
+    <script src="./register.js"></script>
 </body>
 
 </html>

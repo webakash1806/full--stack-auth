@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./registerLogin.css">
+    <link rel="stylesheet" href="./style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -18,44 +16,51 @@
 
 <body>
 
-    <div class="register-container">
-        <h1>Register</h1>
-        <form action="" id="registerForm">
-            <div class="form-detail">
-                <input type="text" name="userName" id="userName" placeholder=" ">
-                <label for="">userName</label>
+    <header>
+        <h1>Hi 👋, I'm <span>Akash Kumar Singh</span></h1>
+        <h3>A passionate full-stack developer from India</h3>
+    </header>
+
+    <main>
+
+        <div class="top">
+            <h2>Full Stack Authentication: Register, Login, and Profile Card</h2>
+            <div class="box">
+                <p>Try Out My Latest Project</p>
+                <div class="btn">
+                    <a href="./register.html">Register</a>
+                    <a href="./login.html">Login</a>
+                </div>
+                <div class="description">
+                    This project focuses on implementing a full stack authentication system that includes user
+                    registration,
+                    login, and a profile card to display user data. Express is used as the backend framework, JWT is
+                    utilized
+                    for generating secure cookies, mongoose is employed for database operations, and bcrypt ensures
+                    password
+                    safety. The project follows a well-defined file structure and includes essential components such as
+                    dbconfig, models, controller, routes, server.js, .env, .gitignore. The frontend is developed using
+                    HTML,
+                    CSS, and JavaScript, with the public folder containing the finished register, login, and user card
+                    interfaces.
+                </div>
+                <div class="links">
+                    <p>Collaborate with me! <a href="mailto:itsakash18.06@gmail.com"><i
+                                class="fa-solid fa-envelope fa-fade"></i>Mail Us</a></p>
+                    <p>Weather App<a href="https://webakash1806.github.io/weather-webakash/" class="live-btn"><i
+                                class="fa-solid fa-circle fa-fade"></i>Live</a></p>
+                    <p>Github Page<a href="https://github.com/webakash1806"><i
+                                class="fa-brands fa-github fa-fade"></i>Github</a></p>
+                    <p>Linkedin<a href="https://www.linkedin.com/in/itsakash18/"><i
+                                class="fa-brands fa-linkedin fa-fade"></i>Connect</a></p>
+                </div>
             </div>
-            <div class="form-detail">
-                <input type="text" name="name" id="name" placeholder=" ">
-                <label for="">Name</label>
-            </div>
-            <div class="form-detail">
-                <input type="email" name="email" id="email" placeholder=" ">
-                <label for="">email</label>
-            </div>
-            <div class="form-detail">
-                <input type="text" name="bio" id="bio" placeholder=" ">
-                <label for="">Bio</label>
-            </div>
-            <div class="form-detail">
-                <input type="password" name="password" id="password" placeholder=" ">
-                <label for="">Password</label>
-            </div>
-            <div class="form-detail">
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder=" ">
-                <label for="">Confirm Password</label>
-            </div>
-            <button type="submit">Register</button>
-        </form>
-        <div class="login-link">
-            <p>Already have an account?</p> <a href="./login.html" class="login">Login</a>
         </div>
-    </div>
+    </main>
 
-    <div id="successShow" class="success-result"></div>
-
-
-    <script src="./register.js"></script>
+    <footer>
+        <p>Copyright &#169;2023 Akash Kumar Singh </p>
+    </footer>
 </body>
 
 </html>
