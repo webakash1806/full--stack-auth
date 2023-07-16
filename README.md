@@ -44,6 +44,7 @@ This project focuses on implementing a full stack authentication system that inc
     ├── 📂 assets
     │   └── img
     └── index.html
+    └── register.html
     └── login.html
     └── user.html
     └── registerLogin.css
