@@ -20,7 +20,7 @@ document.getElementById("registerForm").addEventListener("submit", async (event)
             body: JSON.stringify({ userName, name, email, bio, password, confirmPassword })
         })
         const data = await response.json()
-        console.log(data)
+        // console.log(data)
 
         if (response.status === 404 || response.status === 500) {
             document.getElementById("error").innerHTML = `** ${data.message}`

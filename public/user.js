@@ -10,7 +10,7 @@ const userData = async () => {
             credentials: "include"
         });
         const data = await response.json()
-        console.log(data)
+        // console.log(data)
         // console.log(data.Detail.name)
         if (data.message === "Login Again") {
             window.location.href = "https://jwtauthbackend.onrender.com/login.html"
@@ -24,7 +24,7 @@ const userData = async () => {
         }
     }
     catch (e) {
-        console.log(e)
+        // console.log(e)
     }
 }
 
@@ -38,6 +38,6 @@ document.getElementById("logout").addEventListener("click", async () => {
         }
     }
     catch (e) {
-        console.log(e.message)
+        // console.log(e.message)
     }
 })
